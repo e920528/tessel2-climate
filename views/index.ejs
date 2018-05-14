@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="10" />
+  <title>Tessel Web App</title>
+  <script type="text/javascript" src="js/jquery.tempgauge.js"></script>
+</head>
+<body>
+  <h2>Update every 10 seconds</h2>
+  <ul>
+    <li>
+      Temperature: <span id="temperature"><%=T%>℃</span>
+    </li>
+    <li>
+      Humidity: <span id="humidity"><%=H%>%</span>
+    </li>
+  </ul>
+</body>
+
+<script type="text/javascript">
+
+/*
+    setInterval(() => {
+        // Get temperature
+        var temperature = document.getElementById("temperature");
+        while (temperature.firstChild) {
+          temperature.removeChild(temperature.firstChild);
+        }
+        
+        var t = document.createTextNode("<%=T%>");
+        temperature.appendChild(t);
+        // Get Humidity
+        var humidity = document.getElementById("humidity");
+        while (humidity.firstChild) {
+          humidity.removeChild(humidity.firstChild);
+        }
+        var h = document.createTextNode("<%=H%>");
+        humidity.appendChild(h);  
+    },1000);*/
+    
+    
+ 
+</script>
+</html>
