@@ -10,10 +10,15 @@
   <h2>Update every 10 seconds</h2>
   <ul>
     <li>
-      Temperature: <span id="temperature"><%=T%>℃</span>
+      Temperature:<%if (T>30){%> <span id="temperature" style="color:red"><%=T%>℃</span>
+                  <%}else if(H<15){%> <span id="temperature" style="color:blue"><%=T%>℃</span>
+                  <%}%>
+
     </li>
     <li>
-      Humidity: <span id="humidity"><%=H%>%</span>
+      Humidity: <%if (H>85){%> <span id="humidity" style="color:aqua"><%=H%></span>
+                <%}else if(H<30){%> <span id="humidity" style="color:brown"><%=H%></span>
+                <%}%> 
     </li>
   </ul>
 </body>
